@@ -13,7 +13,7 @@
         border-radius: 10px;
         background-color: #92723C;
         width: 100px;
-        margin-left: 300px;
+        margin-left: 200px;
         /* margin-right: auto; */
         border: 1px solid;
         font-weight: 700;
@@ -33,9 +33,9 @@
      <h6 class="alert alert-danger">{{$message}}</h6>    
   @enderror
  
-  <label for="" class="form-label">Recepta</label>
+  <label for="" class="form-label">Recepta </label>
   <input type="text" name="nombre" id="" aria-describedby="helpId" placeholder="Nom a buscar">
-  <button type="submit">Buscar</button>
+  <button type="submit">Buscar </button>
   </form>  
 </div>
 @endsection
