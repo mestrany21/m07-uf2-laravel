@@ -42,8 +42,8 @@ class elmeucontrolador extends Controller
 
     public function mostrar(){
         $todo = postres::all();
-        return $todo;
-        //return view('mostrar', compact('todo'));
+        //return $todo;
+        return view('postres', compact('todo'));
     }
 
     public function formularibuscar ()
@@ -56,14 +56,14 @@ class elmeucontrolador extends Controller
     {
         $request->validate(
             [
-                'recepta'=>'required'
+                'Nom'=>'required'
             ],
             [
-            'recepta.required'=>'És obligatori posar un nom a la recepta!'            
+                'Nom.required'=>'És obligatori posar un nom de recepta!'            
             ]            
         );
        
-        $recepta=$request->recepta;
+        $recepta=$request->Nom;
         //dd($nombre); //comprova informació en el SGBD
         $todo=postres::where('Nom','like',"%$recepta%")->paginate(10); 
         echo $recepta;       

@@ -13,7 +13,7 @@
         border-radius: 10px;
         background-color: #92723C;
         width: 100px;
-        margin-left: 200px;
+        margin-left: 300px;
         /* margin-right: auto; */
         border: 1px solid;
         font-weight: 700;
@@ -29,13 +29,13 @@
   @if (session('success'))
      <h6 class="alert alert-success">{{session('success')}}</h6>    
   @endif
-  @error('recepta')
+  @error('Nom')
      <h6 class="alert alert-danger">{{$message}}</h6>    
   @enderror
  
-  <label for="" class="form-label">Recepta </label>
-  <input type="text" name="nombre" id="" aria-describedby="helpId" placeholder="Nom a buscar">
-  <button type="submit">Buscar </button>
+  <label for="" class="form-label">Recepta</label>
+  <input type="text" name="Nom" id="" aria-describedby="helpId" placeholder="Nom a buscar">
+  <button type="submit">Buscar</button>
   </form>  
 </div>
 @endsection

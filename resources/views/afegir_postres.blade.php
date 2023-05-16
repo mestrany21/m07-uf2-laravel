@@ -12,17 +12,21 @@
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-        border: 1px solid;
+        /*border: 1px solid;*/
     }
     form div label{
         font-weight: 700!important;
+        margin-left: auto;
+        margin-right: auto;
     }
     form div input{
         background-color: #E7D2AF!important;
         border: 1px solid!important;
-        width: 100%;
+        width: 60%;
         border-radius: 10px;
         height: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
     form button{
         padding: 8px;

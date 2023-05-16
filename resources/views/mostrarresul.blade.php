@@ -8,7 +8,7 @@
       <p>sense resultats</p>  
   @else
   @foreach ($todo as $i)
-   <li>{{ $i->Id }} - {{ $i->Nom }}</li>  
+   <li>{{ $i->id }} - {{ $i->Nom }}</li>  
   @endforeach
   @endif
  </ul>

@@ -58,7 +58,7 @@ Route::get('/postres', [elmeucontrolador::class, 'mostrar'])->name('todos-mostra
 //pel buscador
 Route::get('/buscar', [elmeucontrolador::class,  'formularibuscar'])->name('todos-buscar');
 Route::post('/buscar', [elmeucontrolador::class, 'buscar'])->name('todos-buscar');
-Route::get('/mostrarresul', function(){
-    return view('mostrarresul'); 
-});
+// Route::get('/mostrarresul', function(){
+//     return view('mostrarresul'); 
+// });
 
